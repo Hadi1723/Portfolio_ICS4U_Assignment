@@ -81,3 +81,9 @@ body {
 	padding-right: 55px;
 	padding-left: 25px;
 }
+
+/* styling the class "lists", which is used to style all lists for this website */
+.lists {
+	text-align: left;
+	font-size: 12px;
+}

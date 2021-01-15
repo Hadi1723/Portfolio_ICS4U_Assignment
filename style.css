@@ -85,5 +85,5 @@ body {
 /* styling the class "lists", which is used to style all lists for this website */
 .lists {
 	text-align: left;
-	font-size: 24px;
+	/*font-size: 24px; */
 }

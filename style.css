@@ -1,3 +1,10 @@
+/* styling the class that displays the top heading for every page */
+.welcome {
+	background-color: rgb(243, 155, 182);
+	font-family: 'Codystar'; 
+    	text-align: center;
+}	
+
 body {
 	margin: 0;
 	background-image: url("https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpg");
@@ -24,6 +31,7 @@ body {
 	color: black;
 }
 
+/*styling the container that displays the information on the main-page */
 .intro {
 	text-align: center;
 	color: rgb(233, 153, 21);

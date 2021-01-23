@@ -36,7 +36,7 @@ body {
 /*styling the container that displays the information on the main-page */
 .intro {
 	text-align: center;
-	color: rgb(233, 153, 21);
+	color: #FFFFFF;
 	background-color: #b68bd6;
 	font-family: Monaco, monospace;
 	padding: 10px;

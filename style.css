@@ -12,6 +12,14 @@ body {
 	background-image: url("https://www.freecodecamp.org/news/content/images/2020/04/w-qjCHPZbeXCQ-unsplash.jpg");
 }
 
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 500px;
+}
+
 .topnav {
 	overflow: hidden;
 	background-color: #430f63;

@@ -84,6 +84,9 @@ body {
 .detail {
   color: rgb(255, 0, 0);
   font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   /* text-align: center; */
 }
 
@@ -96,6 +99,16 @@ body {
   margin-left:auto;
   margin-right:auto;
   border-radius:50px;
+}
+
+/* styling the image on the main page */
+#image {
+  width: 80%;
+  height: 300px;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  border:5px solid rgb(188, 38, 215);
 }
 
 #pics {

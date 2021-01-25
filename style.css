@@ -39,8 +39,8 @@ body {
 	color: white;
 	background-color: #b68bd6;
 	font-family: Monaco, monospace;
-	padding: 10px;
-	margin-top: 100px;
+	padding: 3px;
+	margin-top: 50px;
 	margin-right: 100px;
 	margin-left: 100px;
 	font-size: 1.8em;
@@ -84,10 +84,7 @@ body {
 .detail {
   color: rgb(255, 0, 0);
   font-weight: bold;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* text-align: center; */
+  text-align: center;
 }
 
 /* styling the background of green bar on the main page */
@@ -104,7 +101,7 @@ body {
 /* styling the image on the main page */
 #image {
   width: 80%;
-  height: 300px;
+  height: 650px;
   display: block;
   margin-left:auto;
   margin-right: auto;

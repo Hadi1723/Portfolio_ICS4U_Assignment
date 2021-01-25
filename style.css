@@ -84,7 +84,7 @@ body {
 .detail {
   color: #FFFFFF;
   font-weight: bold;
-  float: center;
+  text-align: center;
 }
 
 /* styling the background of green bar on the main page */
@@ -101,7 +101,7 @@ body {
 /* styling the image on the main page */
 #image {
   width: 80%;
-  height: 980px;
+  height: 680px;
   display: block;
   margin-left:auto;
   margin-right: auto;

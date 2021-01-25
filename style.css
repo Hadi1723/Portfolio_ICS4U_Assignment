@@ -82,9 +82,9 @@ body {
 
 /* styling the text-appearance for specific elements that use this class */
 .detail {
-  color: rgb(255, 0, 0);
+  color: #FFFFFF;
   font-weight: bold;
-  text-align: center;
+  float: center;
 }
 
 /* styling the background of green bar on the main page */
@@ -101,7 +101,7 @@ body {
 /* styling the image on the main page */
 #image {
   width: 80%;
-  height: 650px;
+  height: 980px;
   display: block;
   margin-left:auto;
   margin-right: auto;

@@ -7,6 +7,10 @@
   
   <!-- link tag the allows us to use the font, "Codystar" -->
   <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet" type="text/css">
+	
+  <!-- reference that enables the use of specific JQuery language-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	
 </head>
 
 <body>
@@ -31,12 +35,45 @@
   <h1>Overview of Abdul-Hadi's Siddiqui's work in ICS4U</h1>
 </div>
 	
+ <!-- including the text that indicates that the image can change -->
+ <div id="bar">
+ 	<p class= "detail">Click on image to change it</p>
+ </div>
+
+  <!-- image on the main page -->
+  <img id="image" src= "https://insights.dice.com/wp-content/uploads/2018/08/shutterstock_1060094186.jpg" alt= "A laptop with code on the screen.">
+     
+  <!-- reference that enables us to code using JQuery -->
+  <script>
+	  //defining variable that determines which picture will be displayed
+	  var index = 0;
+
+	  //method that changes the image
+ 	  $("#image").on("click", function() {
+    	  	//condition to display new image
+    		if (index === 0) {
+      			$("#image").attr("src", "https://www.simplilearn.com/ice9/free_resources_article_thumb/Best-Programming-Languages-to-Start-Learning-Today.jpg");
+      
+     			 //increasing the value of "index"
+     			 index++;
+   
+   		//condition to display old image
+   		} else {
+       			$("#image").attr("src", "https://insights.dice.com/wp-content/uploads/2018/08/shutterstock_1060094186.jpg");
+     
+     			//decreasing the value of "index"
+    			index--;
+            	}
+	});
+	  
+  </script>
+	
 <div class="intro">	
 <!-- introducting myself-->
   <p>Hi, my name is Abdul-Hadi Siddiqui. I am almsot completing my credit in my ICS4U course at AY Jackson Seconddary School</p>
   <p>I have learned so much in this course, and I apply my understandings as I complete my projects</p>
   <p>Here is what you will be seeing in this website</p>
-	
+  	
   <!-- An ordered list of what viewers will see on this website, and adding hyperlinks to those webpages -->
   <ol class= "lists">
 	  <li><a href="khan.html">My work on Khan Academy</a></li>

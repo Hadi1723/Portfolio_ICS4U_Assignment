@@ -44,6 +44,108 @@
     </figure>
 	 
 </div>
-  
+ 
+	<!-- adding title of my project -->
+    <h1>My favorite food</h1>
+    
+    <!-- revealing the name and picture of my first favorite food -->
+    <div id="container">
+        <h3 id = "names">Cookies</h3>
+        <img id="displayed" src="https://www.kasandbox.org/programming-images/seasonal/xmas-cookies.png" alt="Cookies">
+            
+    </div>
+    
+    <!-- including the left and right buttons -->
+    <div id="button-bar">
+        <button type="button" id="left">◄</button>
+        <button type="button" id="right">►</button>
+    </div>
+    
+    <!-- reference that enables the use of specific JQuery language-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    
+    <!-- reference that enables us to code using JQuery -->
+    <script>
+    //defining array that contains the links(pictures) and names of all of my favorite food
+     var pictures = [
+        {link:"https://www.kasandbox.org/programming-images/seasonal/xmas-cookies.png", caption: "Cookies"},
+        {link:"https://www.kasandbox.org/programming-images/food/cake.png", caption: "Cake"},
+        {link:"https://www.kasandbox.org/programming-images/food/ice-cream.png", caption: "Ice cream"},
+        {link:"https://www.kasandbox.org/programming-images/food/mushroom.png", caption: "Mushrooms"},
+        {link:"https://www.kasandbox.org/programming-images/food/chocolates.png", caption: "Chocolates"}
+        ];
+    
+    //defining variable that determines which picture and name will be displayed (this basically represents the slide number)
+    var index = 0;
+    
+    //method that displays the pictures of the favorite food
+    $('#displayed').attr('src',pictures[index].link);
+    //method that displays the names of the favorite food
+    $('#names').text(pictures[index].caption);
+    
+    //defining function that shows or hides buttons based on the slide's number
+    var checkIndx = function(){
+        if(index===pictures.length-1){
+            $('#right').addClass('hide');
+        }else if(index===0){
+            $('#left').addClass('hide');
+        }else{
+            $('button').removeClass('hide');
+        }
+    }
+    
+    //calling the function hat shows or hides buttons based on the slide's number
+    checkIndx();
+    
+    //method that performs action if the left button is pressed
+    $('#left').click(function(event){
+        //changing the slide number
+        index--;
+        
+        //method that shows new image through "fade-in" animation
+        $('#displayed').show()
+                       .fadeOut(500,function(){
+                        $(this).attr('src',pictures[index].link)
+                               .hide()
+                               .fadeIn(500);
+                       })
+        //method that shows new name through "fade-in" animation
+         $('#names').show()
+                       .fadeOut(500,function(){
+                        $(this).text(pictures[index].caption)
+                               .hide()
+                               .fadeIn(500);
+                       })
+        
+        //calling the function hat shows or hides buttons based on the slide's number
+        checkIndx();
+    });
+    
+     //method that performs action if the right button is pressed
+    $('#right').click(function(event){
+        //changing the slide number
+        index++;
+        
+        //method that shows new image through "fade-in" animation
+        $('#displayed').show()
+                       .fadeOut(500,function(){
+                        $(this).attr('src',pictures[index].link)
+                               .hide()
+                               .fadeIn(500);
+                       })
+        
+        //method that shows new name through "fade-in" animation
+        $('#names').show()
+                       .fadeOut(500,function(){
+                        $(this).text(pictures[index].caption)
+                               .hide()
+                               .fadeIn(500);
+                       })
+              
+        //calling the function hat shows or hides buttons based on the slide's number         
+        checkIndx();
+    });
+    
+    </script> 
 </body>
 </html>

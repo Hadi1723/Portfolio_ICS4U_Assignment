@@ -82,32 +82,33 @@ body {
 
 /* styling the text-appearance for specific elements that use this class */
 .detail {
-  color: #FFFFFF;
-  font-weight: bold;
-  text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
 }
 
 /* styling the background of green bar on the main page */
 #bar{
-  width:300px;
-  height:50px;
-  border:5px solid rgb(74, 162, 230);
-  background-color:rgb(13, 179, 38);
-  margin-left:auto;
-  margin-right:auto;
-  border-radius:50px;
+	width:300px;
+	height:50px;
+	border:5px solid rgb(74, 162, 230);
+	background-color:rgb(13, 179, 38);
+  	margin-left:auto;
+  	margin-right:auto;
+  	border-radius:50px;
 }
 
 /* styling the image on the main page */
 #image {
-  width: 80%;
-  height: 360px;
-  display: block;
-  margin-left:auto;
-  margin-right: auto;
-  border:5px solid rgb(188, 38, 215);
+	width: 80%;
+	height: 360px;
+  	display: block;
+	margin-left:auto;
+  	margin-right: auto;
+  	border:5px solid rgb(188, 38, 215);
 }
 
+/* stlying the images on the page, "Top 10 list" */
 #pics {
 	float: left;
 	margin-right: 10px;
@@ -120,6 +121,12 @@ body {
 	float: left;
 	padding-right: 55px;
 	padding-left: 25px;
+}
+
+/* styling the images on the page, "Extra Challenge" */
+.extraPics {
+	width: 50%;
+	height: 300px;
 }
 
 /* styling the class "lists", which is used to style all lists for this website */

@@ -45,16 +45,16 @@
 	
 	<figure>
  	   <figcaption style="text-align: center">This is an overview of this project. Click on the buttons below to see next slides</figcaption>
-	    <a href="https://hadi1723.github.io/Cubing-progress/"><img id="#extraPics" src="https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg" alt="Picture of cubes"></a>
-    	</figure>
-	     
-   
-    	<!-- including the left and right buttons -->
+	    
+	    <!-- including the left and right buttons -->
     	<div id="button-bar">
         	<button type="button" id="left">◄</button>
         	<button type="button" id="right">►</button>
     	</div>
-        
+		
+	    <a href="https://hadi1723.github.io/Cubing-progress/"><img id="#extraPics" src="https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg" alt="Picture of cubes"></a>
+    	</figure>
+	             
     <!-- reference that enables us to code using JQuery -->
     <script>
     //defining array that contains the links(pictures) and names of all of my favorite food
@@ -70,7 +70,7 @@
     var index = 0;
     
     //method that displays the pictures of the favorite food
-    $('#displayed').attr('src',pictures[index].link);
+    $('#extraPics').attr('src',pictures[index].link);
     //method that displays the names of the favorite food
     $('figcaption').text(pictures[index].caption);
     

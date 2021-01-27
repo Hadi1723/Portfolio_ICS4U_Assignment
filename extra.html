@@ -48,8 +48,8 @@
 	    
 	    <!-- including the left and right buttons -->
     	<div id="button-bar">
-        	<button type="button" id="left">◄</button>
-        	<button type="button" id="right">►</button>
+        	<button type="button" id="back">◄</button>
+        	<button type="button" id="next">►</button>
     	</div>
 		
 	    <a href="https://hadi1723.github.io/Cubing-progress/"><img id="extraPics" src="https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg" alt="Picture of cubes"></a>
@@ -79,9 +79,9 @@
     //defining function that shows or hides buttons based on the slide's number
     var checkIndx = function(){
         if(index===pictures.length-1){
-            $('#right').addClass('hide');
+            $('#next').addClass('hide');
         }else if(index===0){
-            $('#left').addClass('hide');
+            $('#back').addClass('hide');
         }else{
             $('button').removeClass('hide');
         }

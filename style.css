@@ -134,6 +134,34 @@ body {
 	height: 200px;
 }
 
+/*styling the location of the right button on the page, "Extra Challenge" */
+#next{
+	float:right;
+        margin-right:21px;
+}
+            
+/*styling the location of the left button */
+#back{
+	float:left;
+        margin-left:15px;
+}
+
+/* styling the background of the buttons */
+#button-bar{
+	width:300px;
+        height:75px;
+        border:5px solid rgb(74, 162, 230);
+        background-color:rgb(13, 179, 38);
+        margin-left:auto;
+        margin-right:auto;
+        border-radius:50px;
+}
+
+/* defining the hide-class, which is used to switch between different images and names */
+.hide{
+	display: none;
+}
+
 /* styling the class "lists", which is used to style all lists for this website */
 .lists {
 	text-align: left;

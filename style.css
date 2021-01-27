@@ -125,8 +125,12 @@ body {
 
 /* styling the images on the page, "Extra Challenge" */
 .extraPics {
-	width: 50%;
-	height: 300px;
+	display: block;
+	margin-right: auto;
+	margin-top: auto;
+	border: 5px solid #af3bcc;
+	width: 70%;
+	height: 400px;
 }
 
 /* styling the class "lists", which is used to style all lists for this website */

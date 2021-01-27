@@ -173,6 +173,12 @@ body {
        
 }
 
+figcaption {
+	family-font: "Imbue";
+	font-size: 20px;
+	text-align: center;
+}
+
 /* defining the hide-class, which is used to switch between different images and names */
 .hide{
 	display: none;

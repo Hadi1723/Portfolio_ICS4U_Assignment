@@ -129,7 +129,8 @@ body {
 	margin-right: auto;
 	margin-top: auto;
 	border: 5px solid #af3bcc;
-	width: 70%;
+	width: 50%;
+	height: 30%;
 }
 
 /* styling the class "lists", which is used to style all lists for this website */

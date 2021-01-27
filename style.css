@@ -124,7 +124,7 @@ body {
 }
 
 /* styling the images on the page, "Extra Challenge" */
-.extraPics {
+#extraPics {
 	display: block;
 	margin-right: auto;
 	margin-top: auto;

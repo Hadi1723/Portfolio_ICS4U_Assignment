@@ -125,11 +125,9 @@ body {
 
 /* styling the images on the page, "Extra Challenge" */
 #extraPics {
-	/*
 	display: block;
 	margin-right: auto;
-	margin-top: auto; */
-	float: center;
+	margin-left: auto;
 	border: 5px solid #af3bcc;
 	width: 60%;
 	height: 250px;

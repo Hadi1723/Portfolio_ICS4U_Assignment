@@ -1,146 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>FreeCodeCamp Project - Abdul-Hadi Siddiqui's Portfolio</title>
-  <link rel="stylesheet" href="./style.css">
+	<meta charset="UTF-8">
+	<title>FreeCodeCamp Project - Abdul-Hadi Siddiqui's Portfolio</title>
+	<link rel="stylesheet" href="./style.css">
 	
-  <!-- link tag that allows us to use the font, "Codystar" -->
-  <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet" type="text/css">
+	<!-- link tag that allows us to use the font, "Codystar" -->
+	<link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet" type="text/css">
 	
-  <!-- link tag that allows us to use the font, "Hanalei" -->
-  <link href="https://fonts.googleapis.com/css?family=Hanalei" rel="stylesheet" type="text/css">
+	<!-- link tag that allows us to use the font, "Hanalei" -->
+	<link href="https://fonts.googleapis.com/css?family=Hanalei" rel="stylesheet" type="text/css">
 
-    <!-- reference that enables the use of specific JQuery language-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- reference that enables the use of specific JQuery language-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	
 </head>
 
 <body>
-<!-- Creating the top bar of the website -->
-<div class="topnav">
-  <!-- Creating a reference to the main page -->
-  <a href="index.html">Home</a>
-  <!-- Creating a refernence to the page the displays all projects from Khan Academy -->
-  <a href="khan.html">Khan Academy</a>
-  <!-- Creating a refernence to the page the displays all projects from FreeCodeCamp -->
-  <a href="fcc.html">FreeCodeCamp</a>
-  <!-- Creating a refernence to the page the displays all projects from the Coding Challenge -->
-  <a href="challenge.html">Coding Challenge</a>
-  <!-- Creating a reference to the page the displays extra projects -->
-  <a href="extra.html">Extra Challenge</a>
-  <!-- Creating a refernence to the page the displays my top ten modules -->
-  <a href="top.html">Top 10 list</a>
-</div>
-
-
-<div class="welcome">
-  <h1>Extra Project: Cubing-Process Repository</h1>
-</div>
-	
-<div class="mod">
-   <h2><a href="https://github.com/Hadi1723/Cubing-progress" target="_blank">Algorithms Exploration - Cubing Workflow</a></h2>
-    
-	<p style="text-align: center, font-size: 25px;">Click on picture to see the actual project</p>
-    <!-- Click on picture to see the actual repository -->
-	
-	<!-- including the left and right buttons -->
-    	<div id="button-bar">
-        	<button type="button" id="back">◄</button>
-        	<button type="button" id="next">►</button>
-    	</div>
-	
-	<figure>
- 	   <figcaption>This is an overview of this project. Click on the buttons below to see next slides</figcaption>
+	<!-- Creating the top bar of the website -->
+	<div class="topnav">
+		<!-- Creating a reference to the main page -->
+		<a href="index.html">Home</a>
 		
-	    <a href="https://hadi1723.github.io/Cubing-progress/" target="_blank"><img id="extraPics" src="https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg" alt="Picture of cubes"></a>
-    	</figure>
+		<!-- Creating a refernence to the page the displays all projects from Khan Academy -->
+		<a href="khan.html">Khan Academy</a>
+		
+		<!-- Creating a refernence to the page the displays all projects from FreeCodeCamp -->
+		<a href="fcc.html">FreeCodeCamp</a>
+		
+		<!-- Creating a refernence to the page the displays all projects from the Coding Challenge -->
+  		<a href="challenge.html">Coding Challenge</a>
+  		
+		<!-- Creating a reference to the page the displays extra projects -->
+  		<a href="extra.html">Extra Challenge</a>
+  		
+		<!-- Creating a refernence to the page the displays my top ten modules -->
+		<a href="top.html">Top 10 list</a>
+	</div>
+	
+	<!-- creating a section where the title of the webpage is displayed -->
+	<div class="welcome">
+		<!-- the actual title of the webpage -->
+		<h1>Extra Project: Cubing-Process Repository</h1>
+	</div>
+	
+	<!-- creating the container for the main content of the webpage -->
+	<div class="mod">
+		<!-- name of my project and creating the hyperlink to the repository of my project -->
+		<h2><a href="https://github.com/Hadi1723/Cubing-progress" target="_blank">Algorithms Exploration - Cubing Workflow</a></h2>
+    
+		<p style="text-align: center, font-size: 25px;">Click on picture to see the actual project</p>
+		
+	
+		<!-- including the left and right buttons -->
+    		<div id="button-bar">
+			<!-- creating the left button -->
+        		<button type="button" id="back">◄</button>
+			
+			<!-- creating the right button -->
+        		<button type="button" id="next">►</button>
+    		</div>
+	
+		<!-- outputting an image and the image's caption -->
+		<figure>
+			<!-- outputting the caption of the image -->
+ 	   		<figcaption>This is an overview of this project. Click on the buttons below to see next slides</figcaption>
+		
+			<!-- outputting the the image, which is also a hyperlink to my actual project -->
+	    		<a href="https://hadi1723.github.io/Cubing-progress/" target="_blank"><img id="extraPics" src="https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg" alt="Picture of cubes"></a>
+    		</figure>
 	             
-    <!-- reference that enables us to code using JQuery -->
-    <script>
+		<!-- reference that enables us to code using JQuery -->
+		<script>
 	    
-    //defining array that contains the links(pictures) and names of all of my favorite food
-     var pictures = [
-        {link:"https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg", caption: "This is an overview of this project. Click on the buttons below to see next slides."},
-        {link:"Screenshot of respoitory part 1.png", caption: "This repository was made to track my progess in solving numerous cubes. The ones I chose included the Pyraminx Duo, Pyraminx, and the Rubik's Cube (3 x 3)."},
-        {link:"Screenshot of solves.png", caption: "I showed the times I took to solve each cube, and then I recorded my average for each day by removing my BEST AND WORST times."},
-        {link:"Screenshot of validated solves.png", caption: "I also took validated solves, which meant that I had to solve certain cubes in front of my teacher. To record my average for validated solves, I also had to remove my BEST AND WORST times."},
-        {link:"Algorithms.png", caption: "Finally, I recorded every algorithm that I discovered that helped me solve the cubes. For the picture below, these are the algorithms that I discovered while solving the Pyraminx."}
-        ];
+    			//defining array that contains the links(pictures) and their captions
+    			var pictures = [
+        			{link:"https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg", caption: "This is an overview of this project. Click on the buttons below to see next slides."},
+        			{link:"Screenshot of respoitory part 1.png", caption: "This repository was made to track my progess in solving numerous cubes. The ones I chose included the Pyraminx Duo, Pyraminx, and the Rubik's Cube (3 x 3)."},
+        			{link:"Screenshot of solves.png", caption: "I showed the times I took to solve each cube, and then I recorded my average for each day by removing my BEST AND WORST times."},
+        			{link:"Screenshot of validated solves.png", caption: "I also took validated solves, which meant that I had to solve certain cubes in front of my teacher. To record my average for validated solves, I also had to remove my BEST AND WORST times."},
+        			{link:"Algorithms.png", caption: "Finally, I recorded every algorithm that I discovered that helped me solve the cubes. For the picture below, these are the algorithms that I discovered while solving the Pyraminx."}
+        		];
     
-    //defining variable that determines which picture and name will be displayed (this basically represents the slide number)
-    var index = 0;
+    			//defining variable that determines which picture and name will be displayed (this basically represents the slide number)
+    			var index = 0;
     
-    //method that displays the pictures of the favorite food
-    $('#extraPics').attr('src',pictures[index].link);
-	    
-    //method that displays the names of the favorite food
-    $('figcaption').text(pictures[index].caption);
+    			//method that displays the pictures
+    			$('#extraPics').attr('src',pictures[index].link);
+	    			//method that displays the names of the favorite food
+				$('figcaption').text(pictures[index].caption);
     
-    //defining function that shows or hides buttons based on the slide's number
-    var checkIndx = function(){
-        if(index===pictures.length-1){
-            $('#next').addClass('hide');
-        }else if(index===0){
-            $('#back').addClass('hide');
-        }else{
-            $('button').removeClass('hide');
-        }
-    }
-    
-    //calling the function hat shows or hides buttons based on the slide's number
-    checkIndx();
-    
-    //method that performs action if the left button is pressed
-    $('#back').click(function(event){
-        //changing the slide number
-        index--;
+   				 //defining function that shows or hides buttons based on the slide's number
+    				var checkIndx = function(){
+        				if(index===pictures.length-1){
+            					$('#next').addClass('hide');
+        				
+					}else if(index===0){
+            					$('#back').addClass('hide');
         
-        //method that shows new image through "fade-in" animation
-        $('#extraPics').show()
-                       .fadeOut(500,function(){
-                        $(this).attr('src',pictures[index].link)
-                               .hide()
-                               .fadeIn(500);
-                       })
-        //method that shows new name through "fade-in" animation
-         $('figcaption').show()
-                       .fadeOut(500,function(){
-                        $(this).text(pictures[index].caption)
-                               .hide()
-                               .fadeIn(500);
-                       })
-        
-        //calling the function hat shows or hides buttons based on the slide's number
-        checkIndx();
-    });
+					}else{
+            					$('button').removeClass('hide');
+        				}
+    				}
     
-     //method that performs action if the right button is pressed
-    $('#next').click(function(event){
-        //changing the slide number
-        index++;
+    				//calling the function hat shows or hides buttons based on the slide's number
+    				checkIndx();
+    
+    				//method that performs action if the left button is pressed
+   				$('#back').click(function(event){
+        				//changing the slide number
+        				index--;
         
-        //method that shows new image through "fade-in" animation
-        $('#extraPics').show()
-                       .fadeOut(500,function(){
-                        $(this).attr('src',pictures[index].link)
-                               .hide()
-                               .fadeIn(500);
-                       })
+        				//method that shows new image through "fade-in" animation
+        				$('#extraPics').show()
+                       				.fadeOut(500,function(){
+                        				$(this).attr('src',pictures[index].link)
+                               				.hide()
+                               				.fadeIn(500);
+                       				})
         
-        //method that shows new name through "fade-in" animation
-        $('figcaption').show()
-                       .fadeOut(500,function(){
-                        $(this).text(pictures[index].caption)
-                               .hide()
-                               .fadeIn(500);
-                       })
+					//method that shows new name through "fade-in" animation
+         				$('figcaption').show()
+                       				.fadeOut(500,function(){
+                        				$(this).text(pictures[index].caption)
+                               				.hide()
+                               				.fadeIn(500);
+                       				})
+        
+        				//calling the function hat shows or hides buttons based on the slide's number
+        				checkIndx();
+    				});
+    
+     				//method that performs action if the right button is pressed
+    				$('#next').click(function(event){
+        				//changing the slide number
+        				index++;
+        
+        				//method that shows new image through "fade-in" animation
+        				$('#extraPics').show()
+                       				.fadeOut(500,function(){
+                        				$(this).attr('src',pictures[index].link)
+                               				.hide()
+                               				.fadeIn(500);
+                       				})
+        
+        				//method that shows new name through "fade-in" animation
+        				$('figcaption').show()
+                       				.fadeOut(500,function(){
+                        				$(this).text(pictures[index].caption)
+                               				.hide()
+                               				.fadeIn(500);
+                       				})
               
-        //calling the function hat shows or hides buttons based on the slide's number         
-        checkIndx();
-    }); 
+        				//calling the function hat shows or hides buttons based on the slide's number         
+        				checkIndx();
+    				}); 
     
-    </script> 
-</div>
+   		</script> 
+	</div>
 </body>
 </html>

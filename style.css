@@ -125,25 +125,45 @@ body {
 
 /* styling the images on the page, "Extra Challenge" */
 #extraPics {
+	/*
 	display: block;
 	margin-right: auto;
-	margin-top: auto;
+	margin-top: auto; */
 	float: center;
 	border: 5px solid #af3bcc;
-	width: 50%;
-	height: 200px;
+	width: 60%;
+	height: 250px;
 }
 
 /*styling the location of the right button on the page, "Extra Challenge" */
 #next{
 	float:right;
         margin-right:21px;
+	
+        width:50px;
+        height:50px;
+        border-radius:100%;
+        margin-top:12px;
+        border:5px solid rgb(74, 162, 230);
+               
+        background-color:rgb(123, 196, 235);
+        font-size:20px;
 }
             
 /*styling the location of the left button */
 #back{
 	float:left;
         margin-left:15px;
+	
+	/* controlling the size */
+        width:50x;
+        height:50px;
+        border-radius:100%;
+        margin-top:12px;
+        border:5px solid rgb(74, 162, 230);
+                
+        background-color:rgb(123, 196, 235);
+        font-size:20px;
 }
 
 /* styling the background of the buttons */

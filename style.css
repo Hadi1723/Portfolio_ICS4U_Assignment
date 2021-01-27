@@ -125,7 +125,7 @@ body {
 
 /* styling the images on the page, "Extra Challenge" */
 #extraPics {
-	margin-left: 250px;
+	margin-left: 240px;
 	border: 5px solid #af3bcc;
 	width: 60%;
 	height: 350px;
@@ -173,8 +173,9 @@ body {
        
 }
 
+/* styling the caption of the image on the page, "Extra Challenge" */
 figcaption {
-	family-font: "Imbue";
+	family-font: "Hanalei";
 	font-size: 20px;
 	text-align: center;
 }

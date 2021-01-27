@@ -45,7 +45,7 @@
 	
 	<figure>
  	   <figcaption style="text-align: center">This is an overview of this project. Click on the buttons below to see next slides</figcaption>
-	    <a href="https://hadi1723.github.io/Cubing-progress/"><img id="pics" src="https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg" alt="Picture of cubes"></a>
+	    <a href="https://hadi1723.github.io/Cubing-progress/"><img id="#extraPics" src="https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg" alt="Picture of cubes"></a>
     	</figure>
 	     
    
@@ -94,7 +94,7 @@
         index--;
         
         //method that shows new image through "fade-in" animation
-        $('#displayed').show()
+        $('#extraPics').show()
                        .fadeOut(500,function(){
                         $(this).attr('src',pictures[index].link)
                                .hide()
@@ -118,7 +118,7 @@
         index++;
         
         //method that shows new image through "fade-in" animation
-        $('#displayed').show()
+        $('#extraPics').show()
                        .fadeOut(500,function(){
                         $(this).attr('src',pictures[index].link)
                                .hide()

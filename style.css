@@ -151,6 +151,15 @@
 	display: none;
 }
 
+/* styling the buttons on the page, "Top 10 list" */
+.project {
+	background-color: #4f10a1;
+	color: white;
+	padding: 16px;
+	text-decoration: none;
+	float: center;
+} 
+
 /*styling the body for the whole website */
 body {
 	margin: 0;
@@ -183,13 +192,9 @@ figcaption {
 	overflow: hidden;
 }
 
-.project {
-	background-color: #4f10a1;
-	color: white;
-	padding: 16px;
-	text-decoration: none;
-	float: center;
-} */
+
+
+*/
 
 
 

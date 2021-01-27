@@ -7,6 +7,9 @@
 	
   <!-- link tag that allows us to use the font, "Codystar" -->
   <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet" type="text/css">
+
+    <!-- reference that enables the use of specific JQuery language-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	
 </head>
 
@@ -29,7 +32,7 @@
 
 
 <div class="welcome">
-  <h1>FreeCodeCamp Project</h1>
+  <h1>Extra Project: Cubing-Process Repository</h1>
 </div>
 	
 <img src="Screenshot pottfolio.png" alt="Picture of repository" width="500" height="600">
@@ -37,42 +40,30 @@
 <div class="mod">
    <h2><a href="https://github.com/Hadi1723/Cubing-progress">Algorithms Exploration - Cubing Workflow</a></h2>
     
+	<p style="text-align: center, font-size: 25px;">Click on picture to see the actual project</p>
     <!-- Click on picture to see the actual repository -->
-    <figure>
- 	   <figcaption style="text-align: center">Click on picture to see the actual project</figcaption>
-	    <a href="https://hadi1723.github.io/Cubing-progress/"><img id="pics" src="https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg" alt="Algoritms to solve cubes" style="width:100%"></a>
-    </figure>
-	 
-</div>
- 
-	<!-- adding title of my project -->
-    <h1>My favorite food</h1>
-    
-    <!-- revealing the name and picture of my first favorite food -->
-    <div id="container">
-        <h3 id = "names">Cookies</h3>
-        <img id="displayed" src="https://www.kasandbox.org/programming-images/seasonal/xmas-cookies.png" alt="Cookies">
-            
-    </div>
-    
-    <!-- including the left and right buttons -->
-    <div id="button-bar">
-        <button type="button" id="left">◄</button>
-        <button type="button" id="right">►</button>
-    </div>
-    
-    <!-- reference that enables the use of specific JQuery language-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    
+	
+	<figure>
+ 	   <figcaption style="text-align: center">This is an overview of this project. Click on the buttons below to see next slides</figcaption>
+	    <a href="https://hadi1723.github.io/Cubing-progress/"><img id="pics" src="https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg" alt="Picture of cubes"></a>
+    	</figure>
+	     
+   
+    	<!-- including the left and right buttons -->
+    	<div id="button-bar">
+        	<button type="button" id="left">◄</button>
+        	<button type="button" id="right">►</button>
+    	</div>
+        
     <!-- reference that enables us to code using JQuery -->
     <script>
     //defining array that contains the links(pictures) and names of all of my favorite food
      var pictures = [
-        {link:"https://www.kasandbox.org/programming-images/seasonal/xmas-cookies.png", caption: "Cookies"},
-        {link:"https://www.kasandbox.org/programming-images/food/cake.png", caption: "Cake"},
-        {link:"https://www.kasandbox.org/programming-images/food/ice-cream.png", caption: "Ice cream"},
-        {link:"https://www.kasandbox.org/programming-images/food/mushroom.png", caption: "Mushrooms"},
-        {link:"https://www.kasandbox.org/programming-images/food/chocolates.png", caption: "Chocolates"}
+        {link:"https://images-na.ssl-images-amazon.com/images/I/61WuVfl7cVL._SL1500_.jpg", caption: "This is an overview of this project. Click on the buttons below to see next slides."},
+        {link:"Screenshot of respoitory part 1.png", caption: "This repository was made to track my progess in solving numerous cubes. The ones I chose included the Pyraminx Duo, Pyraminx, and the Rubik's Cube (3 x 3)."},
+        {link:"Screenshot of solves.png", caption: "I showed the times I took to solve each cube, and then I recorded my average for each day by removing my BEST AND WORST times."},
+        {link:"Screenshot of validated solves.png", caption: "I also took validated solves, which meant that I had to solve certain cubes in front of my teacher. To record my average for validated solves, I also had to remove my BEST AND WORST times."},
+        {link:"Algorithms.png", caption: "Finally, I recorded every algorithm that I discovered that helped me solve the cubes. For the picture below, these are the algorithms that I discovered while solving the Pyraminx."}
         ];
     
     //defining variable that determines which picture and name will be displayed (this basically represents the slide number)
@@ -81,7 +72,7 @@
     //method that displays the pictures of the favorite food
     $('#displayed').attr('src',pictures[index].link);
     //method that displays the names of the favorite food
-    $('#names').text(pictures[index].caption);
+    $('figcaption').text(pictures[index].caption);
     
     //defining function that shows or hides buttons based on the slide's number
     var checkIndx = function(){
@@ -110,7 +101,7 @@
                                .fadeIn(500);
                        })
         //method that shows new name through "fade-in" animation
-         $('#names').show()
+         $('figcaption').show()
                        .fadeOut(500,function(){
                         $(this).text(pictures[index].caption)
                                .hide()
@@ -135,7 +126,7 @@
                        })
         
         //method that shows new name through "fade-in" animation
-        $('#names').show()
+        $('figcaption').show()
                        .fadeOut(500,function(){
                         $(this).text(pictures[index].caption)
                                .hide()
@@ -147,5 +138,6 @@
     });
     
     </script> 
+</div>
 </body>
 </html>

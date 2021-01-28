@@ -3,6 +3,8 @@ A collection of my projects from ICS4U 2020.
 
 Website link: https://hadi1723.github.io/Portfolio_ICS4U_Assignment/index.html
 
+Interview questions:
+
 1. What makes object oriented design integral to how you think about coding/programming/computer science?
 
 Answer:
